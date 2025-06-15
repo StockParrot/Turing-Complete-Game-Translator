@@ -58,7 +58,7 @@ def process_strings_with_claude(strings_list, system_prompt, user_message_templa
             custom_id=f"request-{i}",
             params=MessageCreateParamsNonStreaming(
                 model="claude-sonnet-4-20250514",
-                max_tokens=1024,
+                max_tokens=4096,
                 system=system_prompt,
                 messages=[{
                     "role": "user",
